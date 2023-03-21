@@ -1,9 +1,12 @@
 body {
-  background: #272044;
+  background: black;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+.text-center {
+  text-align: center;
 }
 .grid {
   display: grid;
@@ -11,20 +14,51 @@ body {
 }
 .img-responsive {
   max-width: 100%;
+  display: block;
+  border-radius: 8px;
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  background: white;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+.card-body {
+  padding: 0 30px 30px;
+}
+.btn {
+  display: block;
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background: #9f3e3c;
+  text-decoration: none;
 }
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section.secondary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/folklore.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/ts-hero.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,7 +99,7 @@ header a {
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background: #948eb2;
+  background: #9f3e3c;
 }
 main {
   background-color: white;
@@ -76,11 +110,9 @@ main h2 {
   font-size: 13px;
   line-height: 1.5;
   letter-spacing: 5px;
-  color: #462cb3;
+  color: #951d1a;
   text-transform: uppercase;
   margin: 0;
-  background: rgba(136, 93, 241, 0.1);
-  padding: 2px 6px;
   grid-gap: 10px;
 }
 main h3 {
@@ -88,8 +120,34 @@ main h3 {
   font-weight: 700;
   font-size: 48px;
   line-height: 1.5;
+  color: #330605;
+  margin: 0;
+}
+main h4 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 25px 0;
+}
+main h5 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
   color: #272044;
   margin: 0;
+}
+main p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+}
+h3.secondary {
+  color: white;
 }
 main p {
   font-family: "Roboto";
